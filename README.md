@@ -1,2 +1,4 @@
-# portfolio
+# plushTeddy's Portfolio Website
+
+It's OpenSource!
  
