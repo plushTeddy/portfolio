@@ -1,0 +1,41 @@
+:root {
+  --bg-color: whitesmoke;
+  --text-color: #2c3e50;
+  --line-color: #6a5acd;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Rubik', sans-serif; }
+
+mark {
+  -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+  animation: 1.5s highlight 1.5s 1 normal forwards;
+  color: var(--text-color);
+  background: linear-gradient(90deg, #87ceeb 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  border-radius: 3px; }
+
+@-webkit-keyframes highlight {
+  to {
+    background-position: 0 0; } }
+@keyframes highlight {
+  to {
+    background-position: 0 0; } }
+.inline {
+  display: inline-block; }
+
+.link {
+  text-decoration: none;
+  color: var(--text-color); }
+
+.spacer {
+  margin-bottom: 350px; }
+
+.spacer_min {
+  margin-bottom: 175px; }
+
+.spacer_inline {
+  margin-inline: 250px; }
+
+/*# sourceMappingURL=main.css.map */
