@@ -1,4 +1,4 @@
 # plushTeddy's Portfolio Website
 
-It's OpenSource! nice
+It's OpenSource!
  
