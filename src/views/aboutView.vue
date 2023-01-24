@@ -22,7 +22,7 @@ export default {
         .then(data => {
           let currentDate = new Date(data.datetime);
           let timeDiff = Math.abs(currentDate.getTime() - startDate.getTime());
-          let diffYears = (timeDiff / (1000 * 3600 * 24 * 365.25)).toFixed(2);
+          let diffYears = (timeDiff / (1000 * 3600 * 24 * 365.25)).toFixed(3);
           this.yearsPassed = parseFloat(diffYears);
         })
         .catch(error => {

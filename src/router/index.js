@@ -33,7 +33,9 @@ const routes = [
   }
 ]
 
+// noinspection JSUnusedLocalSymbols
 const router = createRouter({
+  mode: 'history',
   history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
