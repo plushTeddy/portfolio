@@ -15,11 +15,21 @@ export default {
       yearsPassed: 0
     }
   },
-  mounted() {
-    let startDate = new Date(2022, 0, 1);
-    let currentDate = new Date();
-    let timeDiff = Math.abs(currentDate.getTime() - startDate.getTime());
-    this.yearsPassed = (timeDiff / (1000 * 3600 * 24 * 365.25)).toFixed(3);
+  created() {
+    let startDate = new Date(2022, 0, 1); // January 1st, 2022
+    fetch("https://worldtimeapi.org/api/timezone/Europe/Berlin")
+        .then(response => response.json())
+        .then(data => {
+          let currentDate = new Date(data.datetime);
+          let timeDiff = Math.abs(currentDate.getTime() - startDate.getTime());
+          let diffYears = (timeDiff / (1000 * 3600 * 24 * 365.25)).toFixed(2);
+          this.yearsPassed = parseFloat(diffYears);
+        })
+        .catch(error => {
+          console.log(error);
+        });
   }
 }
 </script>
+
+
