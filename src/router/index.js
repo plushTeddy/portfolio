@@ -4,7 +4,6 @@ import aboutView from '../views/aboutView.vue'
 import projectsView from '../views/projectsView.vue'
 import socialsView from '../views/socialsView.vue'
 import contactView from '../views/contactView.vue'
-import NotFoundView from '../views/NotFoundView.vue'
 
 const routes = [
   {
