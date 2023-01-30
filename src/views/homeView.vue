@@ -62,22 +62,6 @@
   <div class="spacer_min"></div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      image_url: ''
-    }
-  },
-  mounted() {
-    fetch('https://dcl.flawcra.cc/755112341548433489')
-        .then(response => response.json())
-        .then(data => {
-          this.image_url = `https://cdn.discordapp.com/avatars/${data.user.id}/${data.user.avatar}.png`;
-        });
-  }
-}
-</script>
 
 <style>
 #img_url {
