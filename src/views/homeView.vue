@@ -52,15 +52,33 @@
   <section id="home_experience">
     <div v-motion-slide-visible-once-left>
       <h1>where do I work now</h1>
-      <p>unviewed.xyz | Founder</p>
+      <p>Wasserkampf.eu | Supporter</p>
       <p>TeamMLG.net | Developer</p>
       <h1>where I was working</h1>
-      <p>Wasserkampf.eu | Supporter</p>
+      <p>-</p>
     </div>
   </section>
 
   <div class="spacer_min"></div>
 </template>
+
+<script>
+
+export default {
+  data() {
+    return {
+      image_url: null
+    }
+  },
+  mounted() {
+    fetch('https://dcl.flawcra.cc/755112341548433489')
+        .then(response => response.json())
+        .then(data => {
+          this.image_url = `https://cdn.discordapp.com/avatars/${data.user.id}/${data.user.avatar}.png`;
+        });
+  }
+}
+</script>
 
 
 <style>

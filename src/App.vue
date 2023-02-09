@@ -45,21 +45,11 @@ export default {
   components: {
     Navbar
   },
-  data() {
-    return {
-      image_url: ''
-    }
-  },
   mounted() {
     const icon_fav = useFavicon()
     fetch('https://dcl.flawcra.cc/755112341548433489').then(response => response.json()).then(data => {
       icon_fav.value = `https://cdn.discordapp.com/avatars/${data.user.id}/${data.user.avatar}.png`;
     });
-    fetch('https://dcl.flawcra.cc/755112341548433489')
-        .then(response => response.json())
-        .then(data => {
-          this.image_url = `https://cdn.discordapp.com/avatars/${data.user.id}/${data.user.avatar}.png`;
-        });
   }
 }
 </script>
