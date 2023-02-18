@@ -10,11 +10,10 @@
     <div class="theme_button_div">
       <button class="theme_button" id="theme-button" @click="toggleTheme">
         <transition name="fade">
-          <Icon :icon="currentIcon" v-show="!changingIcon" style="  width: 35px; height: 35px;"/>
+          <Icon :icon="currentIcon" v-show="!changingIcon" style="width: 35px; height: 35px;"/>
         </transition>
       </button>
     </div>
-
   </div>
 </template>
 
@@ -96,6 +95,7 @@ nav {
   color: var(--text-color);
   border-radius: 20px;
   background-color: var(--bg-color);
+
 }
 
 
@@ -128,9 +128,12 @@ nav a.router-link-exact-active {
 }
 
 .theme_button {
-  right: 10px;
-  top: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
   z-index: 1;
+  margin-top: 8px;
+  margin-right: 8px;
   background-color: transparent;
   border: none;
   color: var(--text-color);
