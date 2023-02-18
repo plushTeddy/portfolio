@@ -2,6 +2,6 @@
   <h1>Projects</h1>
 
 
-  <h3>-</h3>
+  <h4>sorry, nothing to list here ¯\_(ツ)_/¯</h4>
 
 </template>

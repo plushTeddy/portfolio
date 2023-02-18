@@ -9,7 +9,9 @@
     </nav>
     <div class="theme_button_div">
       <button class="theme_button" id="theme-button" @click="toggleTheme">
-        <Icon :icon="currentIcon" />
+        <transition name="fade">
+          <Icon :icon="currentIcon" v-show="!changingIcon" style="  width: 35px; height: 35px;"/>
+        </transition>
       </button>
     </div>
 
@@ -24,6 +26,7 @@ export default {
   data() {
     return {
       currentIcon: 'ph:moon-stars',
+      changingIcon: false,
       icons: ['ph:moon-stars', 'ph:sun'],
       theme: 'light',
     };
@@ -61,8 +64,12 @@ export default {
     changeIcon() {
       const currentIndex = this.icons.indexOf(this.currentIcon)
       const nextIndex = (currentIndex + 1) % this.icons.length
-      this.currentIcon = this.icons[nextIndex]
-    },
+      this.changingIcon = true
+      setTimeout(() => {
+        this.currentIcon = this.icons[nextIndex]
+        this.changingIcon = false
+      }, 500) // Wartezeit in Millisekunden, bis das nächste Icon angezeigt wird
+    }
   },
 };
 
@@ -135,4 +142,17 @@ nav a.router-link-exact-active {
 .theme_button_div {
   margin-left: auto;
 }
+
+/*noinspection CssUnusedSymbol*/
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s, width 0.5s, height 0.5s;
+}
+
+/*noinspection CssUnusedSymbol*/
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
 </style>

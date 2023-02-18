@@ -51,11 +51,11 @@
 
   <section id="home_experience">
     <div v-motion-slide-visible-once-left>
-      <h1>where do I work now</h1>
-      <p>Wasserkampf.eu | Supporter</p>
-      <p>TeamMLG.net | Developer</p>
+      <h1>where I work now</h1>
+        <p>TeamMLG.net | Developer</p>
+        <p>Wasserkampf.eu | Supporter</p>
       <h1>where I was working</h1>
-      <p>-</p>
+        <p>-</p>
     </div>
   </section>
 

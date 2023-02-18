@@ -39,7 +39,7 @@
 
 
 import Navbar from './components/navbarComponent.vue';
-import {useFavicon} from '@vueuse/core'
+import { useFavicon } from '@vueuse/core'
 
 export default {
   components: {
@@ -69,7 +69,7 @@ export default {
   font-size: 10px;
   color: var(--text-color);
   text-align: center;
-  margin-top: 100px;
+  margin-top: 800px;
 }
 
 .line {
