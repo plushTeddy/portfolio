@@ -6,6 +6,8 @@
     </div>
   </section>
 
+  <div style="margin-top: 75px;"></div>
+
   <router-view/>
 
   <section id="footer">
@@ -85,5 +87,4 @@ export default {
   text-align: center;
   font-size: 20px;
 }
-
 </style>

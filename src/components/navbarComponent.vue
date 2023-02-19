@@ -158,4 +158,8 @@ nav a.router-link-exact-active {
   height: 0;
 }
 
+@media only screen and (max-width: 480px) {
+
+}
+
 </style>
