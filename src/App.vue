@@ -72,6 +72,7 @@ export default {
   color: var(--text-color);
   text-align: center;
   margin-top: 800px;
+  margin-bottom: 20px;
 }
 
 .line {
