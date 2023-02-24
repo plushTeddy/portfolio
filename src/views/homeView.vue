@@ -63,9 +63,9 @@
     <div v-motion-slide-visible-once-left>
       <h1>where I work now</h1>
         <p>TeamMLG.net | Developer</p>
-        <p>Wasserkampf.eu | Supporter</p>
-      <h1>where I was working</h1>
         <p>-</p>
+      <h1>where I was working</h1>
+        <p>Wasserkampf.eu | Supporter</p>
     </div>
   </section>
 
