@@ -133,7 +133,7 @@ nav a:hover {
 
 /*noinspection ALL*/
 nav a.router-link-exact-active {
-  color: #708090;
+  color: #998f80;
 }
 
 .theme_button {
