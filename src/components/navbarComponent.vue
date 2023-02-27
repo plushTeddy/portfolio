@@ -188,6 +188,11 @@ nav a.router-link-exact-active {
     width: 1px;
   }
 
+  nav a {
+    border-radius: 20px;
+    background-color: var(--bg-color);
+  }
+
   .navbar {
     display: none;
   }
