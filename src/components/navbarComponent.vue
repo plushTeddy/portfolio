@@ -7,13 +7,25 @@
       <router-link to="/socials">/socials</router-link>
       <router-link to="/contact">/contact</router-link>
     </nav>
-    <div class="theme_button_div">
-      <button class="theme_button" id="theme-button" @click="toggleTheme">
-        <transition name="fade">
-          <Icon :icon="currentIcon" v-show="!changingIcon" style="width: 35px; height: 35px;"/>
-        </transition>
-      </button>
-    </div>
+  </div>
+
+
+  <div class="navbar_tiny">
+    <nav>
+      <router-link to="/"><Icon icon="material-symbols:home-rounded" /></router-link>
+      <router-link to="/about"><Icon icon="mdi:about" /></router-link>
+      <router-link to="/projects"><Icon icon="eos-icons:project" /></router-link>
+      <router-link to="/socials"><Icon icon="ion:share-social-sharp" /></router-link>
+      <router-link to="/contact"><Icon icon="ic:baseline-perm-contact-calendar" /></router-link>
+    </nav>
+  </div>
+
+  <div class="theme_button_div">
+    <button class="theme_button" id="theme-button" @click="toggleTheme">
+      <transition name="fade">
+        <Icon :icon="currentIcon" v-show="!changingIcon" style="width: 35px; height: 35px;"/>
+      </transition>
+    </button>
   </div>
 </template>
 
@@ -67,7 +79,7 @@ export default {
       setTimeout(() => {
         this.currentIcon = this.icons[nextIndex]
         this.changingIcon = false
-      }, 500) // Wartezeit in Millisekunden, bis das nächste Icon angezeigt wird
+      }, 500)
     }
   },
 };
@@ -95,7 +107,6 @@ nav {
   color: var(--text-color);
   border-radius: 20px;
   background-color: var(--bg-color);
-
 }
 
 
@@ -113,8 +124,6 @@ nav a {
 }
 
 nav a:hover {
-  text-align: center;
-  margin: 20px;
   text-decoration: none;
   color: var(--text-color);
   padding: 7px;
@@ -158,8 +167,34 @@ nav a.router-link-exact-active {
   height: 0;
 }
 
-@media only screen and (max-width: 480px) {
-
+.navbar_tiny{
+  display: none;
 }
+
+@media screen and (max-width: 600px) {
+  .navbar_tiny {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 8px;
+    padding-inline: 1px;
+    width: 1px;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+
+
+
 
 </style>

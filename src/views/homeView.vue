@@ -81,7 +81,7 @@ export default {
       imageLoaded: false
     }
   },
-  mounted() {
+  created() {
     fetch('https://dcl.flawcra.cc/755112341548433489')
         .then(response => response.json())
         .then(data => {

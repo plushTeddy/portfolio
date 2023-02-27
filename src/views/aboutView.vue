@@ -2,7 +2,7 @@
   <h1>About</h1>
 
   <section id="about_text">
-    <div class="spacer_inline">
+    <div class="about_spacer">
       <p>I'm plushTeddy, or as most people call me Teddy. Some people may also know me as clicker (It's my username in games.). I'm a fullstack developer and have been coding for ~{{ yearsPassed }} years. I work on various projects, some of which are open source and some are not. I am currently programming mainly in Python, HTML and CSS. I would like to learn dart, golang and kotlin this year. My hobbies outside of programming are sailing and gaming.</p>
     </div>
   </section>
@@ -32,4 +32,20 @@ export default {
 }
 </script>
 
+<style>
+.about_spacer {
+  margin-inline: 30vh;
+}
 
+@media screen and (max-width: 900px) {
+  .about_spacer {
+    margin-inline: 20vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about_spacer {
+    margin-inline: 10vh;
+  }
+}
+</style>

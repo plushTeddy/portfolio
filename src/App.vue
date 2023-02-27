@@ -38,8 +38,6 @@
 </template>
 
 <script>
-
-
 import Navbar from './components/navbarComponent.vue';
 import { useFavicon } from '@vueuse/core'
 
@@ -47,14 +45,16 @@ export default {
   components: {
     Navbar
   },
-  mounted() {
-    const icon_fav = useFavicon()
-    fetch('https://dcl.flawcra.cc/755112341548433489').then(response => response.json()).then(data => {
-      icon_fav.value = `https://cdn.discordapp.com/avatars/${data.user.id}/${data.user.avatar}.png`;
-    });
+  setup() {
+    fetch('https://dcl.flawcra.cc/755112341548433489')
+        .then(response => response.json())
+        .then(data => {
+          useFavicon(`https://cdn.discordapp.com/avatars/${data.user.id}/${data.user.avatar}.png`)
+        });
   }
 }
 </script>
+
 
 <style>
 /*noinspection ALL*/

@@ -11,4 +11,9 @@
     <a class="link" href="https://github.com/plushTeddy/">@plushTeddy</a>
   </section>
 
+  <section id="socials_youtube">
+    <h4>YouTube</h4>
+    <a class="link" href="https://www.youtube.com/channel/UCP94f_Dk47JBDJHo8GQANEg/">@clickert</a>
+  </section>
+
 </template>
