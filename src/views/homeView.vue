@@ -49,11 +49,11 @@
     <div v-motion-slide-visible-once-left>
       <h1>how I code now</h1>
       <p>Python</p>
-      <p>HTML, CSS</p>
+      <p>HTML, CSS, VueJS</p>
       <h1>how I wan't to code in future</h1>
+      <p>Kotlin</p>
       <p>Dart</p>
       <p>Golang</p>
-      <p>Kotlin</p>
     </div>
   </section>
 
