@@ -187,6 +187,7 @@ nav a.router-link-exact-active {
     margin-top: 8px;
     padding-inline: 1px;
     width: 1px;
+    z-index: 2;
   }
 
   nav a {
@@ -199,12 +200,13 @@ nav a.router-link-exact-active {
   }
 
   .nav_background {
-    background-color: whitesmoke;
-    width: 6.8vh;
-    height: 47.25vh;
-    border-radius: 10px;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    width: 54.4px;
+    height: 375.5px;
     margin-left: 18px;
     margin-top: 10px;
+    z-index: 1;
 
 
     position: fixed;
