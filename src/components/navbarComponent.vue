@@ -18,6 +18,7 @@
       <router-link to="/socials"><Icon icon="ion:share-social-sharp" /></router-link>
       <router-link to="/contact"><Icon icon="ic:baseline-perm-contact-calendar" /></router-link>
     </nav>
+    <div class="nav_background"></div>
   </div>
 
   <div class="theme_button_div">
@@ -196,6 +197,20 @@ nav a.router-link-exact-active {
   .navbar {
     display: none;
   }
-}
 
+  .nav_background {
+    background-color: whitesmoke;
+    width: 6.8vh;
+    height: 47.25vh;
+    border-radius: 10px;
+    margin-left: 18px;
+    margin-top: 10px;
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+}
 </style>

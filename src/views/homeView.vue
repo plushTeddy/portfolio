@@ -62,8 +62,6 @@
   <section id="home_experience">
     <div v-motion-slide-visible-once-left>
       <h1>where I work now</h1>
-        <p>TeamMLG.net | Developer</p>
-        <p>-</p>
       <h1>where I was working</h1>
         <p>Wasserkampf.eu | Supporter</p>
     </div>
