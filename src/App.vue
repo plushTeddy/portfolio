@@ -3,6 +3,7 @@
   <section id="navbar">
     <div>
       <Navbar/>
+        <h1>Hello</h1>
     </div>
   </section>
 
