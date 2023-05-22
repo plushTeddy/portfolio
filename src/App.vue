@@ -3,7 +3,6 @@
   <section id="navbar">
     <div>
       <Navbar/>
-        <h1>Hello</h1>
     </div>
   </section>
 
@@ -66,7 +65,6 @@ export default {
 }
 
 .footer {
-  float: bottom;
   bottom: 0;
   width: 100%;
   font-size: 10px;

@@ -4,22 +4,19 @@
 
   <section id="projects_unviewed">
     <div>
-      <h4><a class="link" href="https://unviewed.xyz/">unviewed.xyz</a></h4>
-      <p>I'm the owner of the unviewed development project<br><br>We manage, publish and create new projects</p>
+      <h4><a class="link" href="https://snow-client.com/">Snow Client</a></h4>
+      <h5><i>Founder</i></h5>
+      <p>Snow Client is a new and innovative Minecraft Client!</p>
       <div class="project_social">
-        <a href="https://discord.gg/TvExTH9xDa/" class="link">
+        <a href="https://snow-client.com/discord" class="link">
           <Icon icon="ic:baseline-discord"/>
         </a>
         &nbsp;
-        <a href="https://twitter.com/unviewed_xyz/" class="link">
+        <a href="https://snow-client.com/twitter" class="link">
           <Icon icon="mdi:twitter"/>
         </a>
         &nbsp;
-        <a href="https://github.com/unviewed-xyz/" class="link">
-          <Icon icon="mdi:github"/>
-        </a>
-        &nbsp;
-        <a href="https://unviewed.xyz/" class="link">
+        <a href="https://snow-client.com/" class="link">
           <Icon icon="mdi:external-link" />
         </a>
       </div>

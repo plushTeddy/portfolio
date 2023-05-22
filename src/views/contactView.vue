@@ -3,7 +3,7 @@
 
   <section id="contact_mail">
     <h4>E-Mail</h4>
-    <a class="link" href="mailto:contact@plushTeddy.dev"><i>contact@plushTeddy.dev</i></a>
+    <a class="link" href="mailto:contact@plushTeddy.wtf"><i>contact@plushTeddy.dev</i></a>
   </section>
 
   <section id="contact_discord">
@@ -13,6 +13,6 @@
 
   <section id="discord_twitter">
     <h4>Twitter DM</h4>
-    <a class="link" href="https://twitter.com/LiLplushTeddy/"><i>@LiLplushTeddy</i></a>
+    <a class="link" href="https://twitter.com/plushTeddy_/"><i>@plushTeddy_</i></a>
   </section>
 </template>

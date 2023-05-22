@@ -3,7 +3,7 @@
 
   <section id="about_text">
     <div class="about_spacer">
-      <p>I'm plushTeddy, or as most people call me Teddy. Some people may also know me as clicker (It's my username in most games.). I'm a fullstack developer and have been coding for ~{{ yearsPassed }} years. I work on various projects, some of which are open source and some are not. I am currently programming mainly in Python, HTML and CSS. I would like to learn dart, golang and kotlin this year. My hobbies outside of programming are sailing and gaming.</p>
+      <p>I'm plushTeddy, or as most people call me Teddy. I'm a fullstack developer and have been coding for ~{{ yearsPassed }} years. I work on various projects, some of which are open source and some are not. I am currently programming mainly in Python, Kotlin, HTML and CSS. I would like to learn dart and golang this year. My hobbies outside of programming are sailing and gaming.</p>
     </div>
   </section>
 </template>
@@ -16,7 +16,7 @@ export default {
     }
   },
   created() {
-    let startDate = new Date(2022, 0, 1); // January 1st, 2022
+    let startDate = new Date(2022, 3, 4); // January 1st, 2022
     fetch("https://worldtimeapi.org/api/timezone/Europe/Berlin")
         .then(response => response.json())
         .then(data => {

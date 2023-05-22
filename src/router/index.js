@@ -1,35 +1,31 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import homeView from '../views/homeView.vue'
-import aboutView from '../views/aboutView.vue'
-import projectsView from '../views/projects_View.vue'
-import socialsView from '../views/socialsView.vue'
-import contactView from '../views/contactView.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: homeView
+    component: () => import('../views/homeView.vue')
   },
   {
     path: '/about',
-    name: 'about',
-    component: aboutView
+    component: () => import('../views/aboutView.vue')
   },
   {
     path: '/projects',
-    name: 'projects',
-    component: projectsView
+    component: () => import('../views/projectsView.vue')
   },
   {
     path: '/socials',
-    name: 'socials',
-    component: socialsView
+    component: () => import('../views/socialsView.vue')
   },
   {
     path: '/contact',
-    name: 'contact',
-    component: contactView
+    component: () => import('../views/contactView.vue')
+  },
+
+
+  {
+    path: '/:pathMatch(.*)*',
+    component:  () => import('../views/unknownView.vue')
   },
 ]
 

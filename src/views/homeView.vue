@@ -18,7 +18,7 @@
       <h1>Hey, I'm plushTeddy ✌️</h1>
     </div>
 
-    <br><br><br>
+    <br><br><br><br><br><br><br><br><br>
 
     <div class="scroll-downs">
       <div class="mouse">
@@ -31,7 +31,7 @@
 
   <section id="home_country">
     <div v-motion-slide-visible-once-left>
-      <h1>Switzerland, CH</h1>
+      <h1><Icon icon="pixelarticons:pin" /> Switzerland, CH</h1>
     </div>
   </section>
 
@@ -43,17 +43,40 @@
     </div>
   </section>
 
+
   <div class="spacer"></div>
 
-  <section id="home_languages">
+  <section id="home_technologies">
     <div v-motion-slide-visible-once-left>
-      <h1>how I code now</h1>
-      <p>Python</p>
-      <p>HTML, CSS, VueJS</p>
-      <h1>how I wan't to code in future</h1>
-      <p>Kotlin</p>
-      <p>Dart</p>
-      <p>Golang</p>
+      <h1>technologies</h1>
+      <div style="padding: 20px; width: 20%; margin: 0 auto; font-size: 40px;">
+        <Icon icon="logos:python" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="devicon:kotlin" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="logos:html-5" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="vscode-icons:file-type-css" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="devicon:vuejs" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="devicon:github" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="wpf:mac-os" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="ri:windows-fill" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="logos:debian" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="logos:ubuntu" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="simple-icons:plesk" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="logos:nginx" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="skill-icons:docker" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="logos:jetbrains" style="margin-bottom: 10px; padding-inline: 10px;" />
+        <Icon icon="devicon:mysql-wordmark" style="margin-bottom: 10px; padding-inline: 10px;" />
+      </div>
+
+    </div>
+  </section>
+
+  <div class="spacer"></div>
+
+  <section id="home_projects">
+    <div v-motion-slide-visible-once-left>
+      <h1>my projects</h1>
+      <h4>Snow Client</h4>
+      <p><a href="https://teammlg.net/" class="link">Snow-Client.com</a> | Founder</p>
     </div>
   </section>
 
@@ -61,7 +84,8 @@
 
   <section id="home_experience">
     <div v-motion-slide-visible-once-left>
-      <h1>where I work now</h1>
+      <h1>where I work at the moment</h1>
+        <p><a href="https://teammlg.net/" class="link">TeamMLG.net</a> | Developer</p>
       <h1>where I was working</h1>
         <p>Wasserkampf.eu | Supporter</p>
     </div>
