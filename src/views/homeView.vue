@@ -72,13 +72,13 @@
 
   <div class="spacer"></div>
 
-  /*<section id="home_projects">
+  <!--<section id="home_projects">
     <div v-motion-slide-visible-once-left>
       <h1>my projects</h1>
       <h4>Weather Cast</h4>
       <p><a href="https://w" class="link">Snow-Client.com</a> | Founder</p>
     </div>
-  </section>*/
+  </section>-->
 
   <div class="spacer"></div>
 
