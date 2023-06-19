@@ -72,21 +72,22 @@
 
   <div class="spacer"></div>
 
-  <section id="home_projects">
+  /*<section id="home_projects">
     <div v-motion-slide-visible-once-left>
       <h1>my projects</h1>
-      <h4>Snow Client</h4>
-      <p><a href="https://teammlg.net/" class="link">Snow-Client.com</a> | Founder</p>
+      <h4>Weather Cast</h4>
+      <p><a href="https://w" class="link">Snow-Client.com</a> | Founder</p>
     </div>
-  </section>
+  </section>*/
 
   <div class="spacer"></div>
 
   <section id="home_experience">
     <div v-motion-slide-visible-once-left>
       <h1>where I work at the moment</h1>
-        <p><a href="https://teammlg.net/" class="link">TeamMLG.net</a> | Developer</p>
+        <p>-</p>
       <h1>where I was working</h1>
+        <p>TeamMLG.net | Developer</p>
         <p>Wasserkampf.eu | Supporter</p>
     </div>
   </section>

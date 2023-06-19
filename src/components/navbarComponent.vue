@@ -3,7 +3,7 @@
     <nav>
       <router-link to="/">/</router-link>
       <router-link to="/about">/about</router-link>
-      <router-link to="/projects">/projects</router-link>
+      <!--<router-link to="/projects">/projects</router-link>-->
       <router-link to="/socials">/socials</router-link>
       <router-link to="/contact">/contact</router-link>
     </nav>
@@ -14,7 +14,7 @@
     <nav>
       <router-link to="/"><Icon icon="material-symbols:home-rounded" /></router-link>
       <router-link to="/about"><Icon icon="mdi:about" /></router-link>
-      <router-link to="/projects"><Icon icon="eos-icons:project" /></router-link>
+      <!--<router-link to="/projects"><Icon icon="eos-icons:project" /></router-link>-->
       <router-link to="/socials"><Icon icon="ion:share-social-sharp" /></router-link>
       <router-link to="/contact"><Icon icon="ic:baseline-perm-contact-calendar" /></router-link>
     </nav>
