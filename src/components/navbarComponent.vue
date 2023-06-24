@@ -1,5 +1,9 @@
 <template>
+  <div class="donate">
+    <a href="https://bmc.link/plushTeddy" class="link"><Icon icon="simple-icons:buymeacoffee" /></a>
+  </div>
   <div class="navbar">
+
     <nav>
       <router-link to="/">/</router-link>
       <router-link to="/about">/about</router-link>
@@ -27,6 +31,10 @@
         <Icon :icon="currentIcon" v-show="!changingIcon" style="width: 35px; height: 35px;"/>
       </transition>
     </button>
+  </div>
+
+  <div class="donate-tiny">
+    <a href="https://bmc.link/plushTeddy" class="link"><Icon icon="simple-icons:buymeacoffee" /></a>
   </div>
 </template>
 
@@ -142,8 +150,8 @@ nav a.router-link-exact-active {
   top: 0;
   right: 0;
   z-index: 1;
-  margin-top: 8px;
-  margin-right: 8px;
+  margin-top: 10px;
+  margin-right: 45px;
   background-color: transparent;
   border: none;
   color: var(--text-color);
@@ -167,6 +175,24 @@ nav a.router-link-exact-active {
   width: 0;
   height: 0;
 }
+
+.donate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 14px;
+  margin-left: 48px;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  display: flex;
+  font-size: 35px;
+}
+
+
+
+
 
 .navbar_tiny{
   display: none;
@@ -212,6 +238,32 @@ nav a.router-link-exact-active {
     position: fixed;
     top: 0;
     left: 0;
+  }
+
+
+  .donate {
+    display: none;
+  }
+
+
+  .donate-tiny {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    margin-top: 90px;
+    margin-right: 25px;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 35px;
+  }
+
+
+  .theme_button {
+    margin-top: 20px;
+    margin-right: 18px;
   }
 
 }
