@@ -13,6 +13,19 @@ jobs:
       - name: Check out source code
         uses: actions/checkout@v2
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Hier können Sie die gewünschte Node.js-Version angeben
+
+      - name: Install dependencies
+        run: npm install  # Hier sollten Sie den Befehl für die Installation Ihrer Abhängigkeiten anpassen
+        working-directory: ${{ github.workspace }}
+
+      - name: Build the project
+        run: npm run build
+        working-directory: ${{ github.workspace }}
+
       - name: Copy dist folder
         run: |
           mkdir -p dist_copy
