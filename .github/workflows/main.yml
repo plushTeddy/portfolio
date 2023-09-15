@@ -1,0 +1,28 @@
+name: auto push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@v2
+
+      - name: Copy dist folder
+        run: |
+          mkdir -p dist_copy
+          cp -r dist/* dist_copy/
+        working-directory: ${{ github.workspace }}
+
+      - name: Push dist folder to Another Repo
+        uses: ad-m/github-push-action@master
+        with:
+          repository: plushTeddy/plushteddy.github.io
+          branch: main
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
