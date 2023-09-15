@@ -16,10 +16,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Hier können Sie die gewünschte Node.js-Version angeben
+          node-version: '18'
 
       - name: Install dependencies
-        run: npm install  # Hier sollten Sie den Befehl für die Installation Ihrer Abhängigkeiten anpassen
+        run: npm install
         working-directory: ${{ github.workspace }}
 
       - name: Build the project
